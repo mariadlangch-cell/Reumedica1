@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Francy Chacón | Reumatólogo - Internista | San Cristóbal</title>
+    <meta name="description" content="Atención especializada en reumatología y medicina interna en San Cristóbal, Táchira. Evaluación integral para artritis, lupus, artrosis y enfermedades autoinmunes.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        :root {
+            --purple-main: #7C3AED;
+            --purple-light: #A78BFA;
+            --purple-pastel: #F3E8FF;
+            --purple-pastel-soft: #FAF5FF;
+            --purple-dark: #4C1D95;
+            --purple-glow: rgba(124, 58, 237, 0.15);
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --bg-white: #FFFFFF;
+            --whatsapp-green: #22C55E;
+            --whatsapp-hover: #16A34A;
+            --instagram-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Top Announcement Bar */
+        .top-announcement {
+            background-color: var(--purple-dark);
+            color: #FFFFFF;
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 8px 0;
+        }
+
+        /* Navbar Styling */
+        .navbar-custom {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand .doctor-title {
+            font-weight: 800;
+            color: var(--purple-dark);
+            font-size: 1.25rem;
+            line-height: 1.2;
+        }
+
+        .navbar-brand .doctor-subtitle {
+            font-size: 0.75rem;
+            color: var(--purple-main);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin: 0 8px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--purple-main) !important;
+        }
+
+        /* Buttons */
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF !important;
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 10px 24px;
+            border: none;
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.45);
+        }
+
+        .btn-purple {
+            background-color: var(--purple-main);
+            color: #FFFFFF !important;
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 12px 28px;
+            border: none;
+            box-shadow: 0 4px 16px var(--purple-glow);
+            transition: all 0.3s ease;
+        }
+
+        .btn-purple:hover {
+            background-color: var(--purple-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(124, 58, 237, 0.35);
+        }
+
+        .btn-outline-purple {
+            border: 2px solid var(--purple-main);
+            color: var(--purple-main);
+            font-weight: 700;
+            border-radius: 50px;
+            padding: 10px 26px;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .btn-outline-purple:hover {
+            background-color: var(--purple-pastel);
+            color: var(--purple-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--purple-pastel-soft) 0%, #FFFFFF 100%);
+            padding: 70px 0 60px;
+            position: relative;
+        }
+
+        .hero-badge {
+            background-color: var(--purple-pastel);
+            color: var(--purple-dark);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 6px 16px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 20px;
+            border: 1px solid var(--purple-light);
+        }
+
+        .hero-title {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .hero-img-container {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.15);
+            border: 4px solid #FFFFFF;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            object-position: center 15%;
+            transition: transform 0.5s ease;
+        }
+
+        .hero-img-container:hover .hero-img {
+            transform: scale(1.02);
+        }
+
+        /* Proof Badges Bar */
+        .proof-bar {
+            background-color: #FFFFFF;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-top: -30px;
+            position: relative;
+            z-index: 10;
+            border: 1px solid var(--purple-pastel);
+        }
+
+        .proof-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .proof-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background-color: var(--purple-pastel);
+            color: var(--purple-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* Section Cards & Titles */
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 50px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Symptom Cards */
+        .symptom-card {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid #F1F5F9;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .symptom-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--purple-light);
+            box-shadow: 0 15px 35px var(--purple-glow);
+        }
+
+        .symptom-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--purple-pastel) 0%, #FFFFFF 100%);
+            color: var(--purple-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Doctor Bio Section */
+        .doctor-section {
+            background-color: var(--purple-pastel-soft);
+            padding: 90px 0;
+        }
+
+        .credential-list {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+        }
+
+        .credential-list li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 14px;
+            font-weight: 500;
+        }
+
+        .credential-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--purple-main);
+            background-color: var(--purple-pastel);
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        /* Conditions & Services Nav Tabs */
+        .custom-tabs .nav-link {
+            border-radius: 50px;
+            padding: 12px 26px;
+            font-weight: 700;
+            color: var(--text-muted) !important;
+            border: 1px solid #E2E8F0;
+            background-color: #FFFFFF;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .custom-tabs .nav-link.active {
+            background-color: var(--purple-main) !important;
+            color: #FFFFFF !important;
+            border-color: var(--purple-main);
+            box-shadow: 0 6px 18px var(--purple-glow);
+        }
+
+        .service-box {
+            background-color: #FFFFFF;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid var(--purple-pastel);
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .service-box:hover {
+            border-color: var(--purple-main);
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.08);
+        }
+
+        /* Step Cards */
+        .step-card {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            position: relative;
+            border: 1px solid var(--purple-pastel);
+            height: 100%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+        }
+
+        .step-number {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: var(--purple-main);
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 12px var(--purple-glow);
+        }
+
+        /* Testimonial Cards */
+        .testimonial-card {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid var(--purple-pastel);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .stars {
+            color: #F59E0B;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Location & Payments Section */
+        .info-card {
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--purple-pastel);
+        }
+
+        .payment-badge {
+            background-color: var(--purple-pastel-soft);
+            border: 1px solid var(--purple-pastel);
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            font-weight: 700;
+            color: var(--purple-dark);
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Accordion */
+        .accordion-item {
+            border: 1px solid var(--purple-pastel);
+            border-radius: 16px !important;
+            margin-bottom: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .accordion-button {
+            font-weight: 700;
+            color: var(--purple-dark);
+            background-color: #FFFFFF;
+            padding: 20px 25px;
+            font-size: 1.05rem;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: var(--purple-pastel-soft);
+            color: var(--purple-main);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: var(--purple-light);
+        }
+
+        .accordion-body {
+            color: var(--text-dark);
+            line-height: 1.7;
+            padding: 20px 25px 25px;
+            background-color: #FFFFFF;
+        }
+
+        /* Floating Contact Widgets */
+        .floating-widgets {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-end;
+        }
+
+        .whatsapp-widget {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .whatsapp-btn-float {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-btn-float:hover {
+            color: #FFFFFF;
+            transform: scale(1.1);
+            background-color: var(--whatsapp-hover);
+        }
+
+        .whatsapp-tooltip {
+            background-color: #FFFFFF;
+            color: var(--text-dark);
+            padding: 10px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            margin-right: 12px;
+            border: 1px solid var(--purple-pastel);
+            white-space: nowrap;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .instagram-btn-float {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--instagram-gradient);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 6px 18px rgba(220, 39, 67, 0.3);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-btn-float:hover {
+            color: #FFFFFF;
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0F172A;
+            color: #94A3B8;
+            padding: 60px 0 30px;
+            font-size: 0.9rem;
+        }
+
+        .footer-title {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: #94A3B8;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--purple-light);
+        }
+
+        /* Media Queries */
+        @media (max-width: 991px) {
+            .hero-title {
+                font-size: 2.1rem;
+            }
+            .hero-img {
+                height: 380px;
+                margin-top: 30px;
+            }
+            .whatsapp-tooltip {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement text-center">
+        <div class="container">
+            <i class="fa-solid fa-location-dot me-2"></i> Atención presencial en <strong>San Cristóbal, Estado Táchira (IBIDSA)</strong> | Consulta Online Nacional e Internacional
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <div class="p-2 rounded-circle bg-purple-pastel text-purple-main d-flex align-items-center justify-content-center" style="width:42px; height:42px; background-color: var(--purple-pastel);">
+                    <i class="fa-solid fa-stethoscope text-purple-main" style="color: var(--purple-main); font-size: 1.2rem;"></i>
+                </div>
+                <div>
+                    <div class="doctor-title">Dra. Francy Chacón</div>
+                    <div class="doctor-subtitle">REUMATÓLOGO - INTERNISTA</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#especialidades">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre la Doctora</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación y Pagos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Preguntas Frecuentes</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="https://wa.me/584161372180?text=Hola%20Dra.%20Francy%20Chac%C3%B3n%2C%20vi%20su%20p%C3%A1gina%20web%20y%20deseo%20agendar%20una%20consulta%20m%C3%A9dica.%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20disponibilidad." target="_blank" class="btn btn-whatsapp text-nowrap">
+                            <i class="fa-brands fa-whatsapp fs-5"></i> Agendar Cita
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="hero-badge">
+                        <i class="fa-solid fa-sparkles me-1"></i> Especialista en Salud Articular y Autoimunidad
+                    </span>
+                    <h1 class="hero-title">
+                        Recupera tu movilidad y vive sin dolor articular con atención reumatológica especializada
+                    </h1>
+                    <p class="hero-subtitle">
+                        Diagnóstico preciso y tratamiento integral para enfermedades autoinmunes, dolor articular y condiciones crónicas. Un enfoque humano respaldado por la Medicina Interna y la Reumatología en San Cristóbal, Estado Táchira (IBIDSA).
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="https://wa.me/584161372180?text=Hola%20Dra.%20Francy%20Chac%C3%B3n%2C%20vi%20su%20p%C3%A1gina%20web%20y%20deseo%20agendar%20una%20consulta%20m%C3%A9dica%20%5BPresencial%20%2F%20Online%5D.%20Me%20gustar%C3%ADa%20informaci%C3%B3n." target="_blank" class="btn btn-whatsapp btn-lg">
+                            <i class="fa-brands fa-whatsapp fs-4"></i> Agendar Consulta por WhatsApp
+                        </a>
+                        <a href="#ubicacion" class="btn btn-outline-purple btn-lg">
+                            <i class="fa-solid fa-clock me-1"></i> Ver Horarios y Ubicación
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <div class="hero-img-container">
+                        <img src="ChatGPT Image 10 jul 2026, 06_08_58 p.m..png" 
+                             alt="Dra. Francy Chacón - Reumatólogo e Internista" 
+                             class="hero-img"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x800/F3E8FF/4C1D95?text=Dra.+Francy+Chac%C3%B3n';">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Micro-Social Proof Bar -->
+            <div class="proof-bar">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="proof-item">
+                            <div class="proof-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Doble Especialidad</h6>
+                                <small class="text-muted">Medicina Interna + Reumatología</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proof-item">
+                            <div class="proof-icon">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Aval Científico</h6>
+                                <small class="text-muted">Miembro Activo SVR / MPPS Registrada</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proof-item">
+                            <div class="proof-icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Atención Personalizada</h6>
+                                <small class="text-muted">Consultas dedicadas sin prisas (45-60 min)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: Cuadro de Empatía y Detección de Síntomas -->
+    <section class="py-5 my-4">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-uppercase text-purple-main fw-bold tracking-wide" style="color: var(--purple-main); letter-spacing: 1px;">Identificación Temprana</span>
+                <h2 class="section-title">¿Sientes alguno de estos síntomas o te diagnosticaron una condición autoinmune?</h2>
+                <p class="section-subtitle">No te acostumbres a vivir con dolor. Escuchar a tu cuerpo es el primer paso para proteger tus articulaciones y recuperar tu tranquilidad.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Dolor e Inflamación Articular</h5>
+                        <p class="text-muted fs-6 mb-0">Rigidez en las manos por las mañanas, hinchazón o dolor constante en rodillas, hombros, caderas o pies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fa-solid fa-dna"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Sospecha de Autoinmunidad</h5>
+                        <p class="text-muted fs-6 mb-0">Fatiga extrema sin causa aparente, manchas en la piel, fiebre recurrente, aftas bucales o sequedad en ojos y boca.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fa-solid fa-person-walking-with-cane"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Afectación Muscular / Rigidez</h5>
+                        <p class="text-muted fs-6 mb-0">Dificultad para levantarse de una silla, subir escaleras, peinarse o llevar a cabo tus actividades normales.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="symptom-card">
+                        <div class="symptom-icon">
+                            <i class="fa-solid fa-file-waveform"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Segunda Opinión Médica</h5>
+                        <p class="text-muted fs-6 mb-0">¿Tienes un diagnóstico incierto o buscas ajustar tu tratamiento biológico o inmunosupresor actual?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <div class="p-4 rounded-4" style="background-color: var(--purple-pastel-soft); border: 1px border-purple-pastel; display: inline-block;">
+                    <p class="mb-0 fw-semibold text-purple-dark fs-5">
+                        <i class="fa-solid fa-circle-info me-2 text-purple-main" style="color: var(--purple-main);"></i> Un diagnóstico temprano es la clave para frenar el avance del daño articular y recuperar tu calidad de vida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: Sobre la Especialista -->
+    <section class="doctor-section" id="sobre-mi">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <div class="position-relative">
+                        <img src="ChatGPT Image 10 jul 2026, 06_08_58 p.m..png" 
+                             alt="Dra. Francy Chacón en consulta médica" 
+                             class="img-fluid rounded-4 shadow-lg border border-4 border-white"
+                             style="width: 100%; max-height: 550px; object-fit: cover; object-position: center 10%;"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x700/F3E8FF/4C1D95?text=Dra.+Francy+Chac%C3%B3n';">
+                        <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-4 shadow me-3 mb-3 border border-purple-pastel" style="max-width: 220px;">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-award text-purple-main fs-2" style="color:var(--purple-main);"></i>
+                                <div>
+                                    <div class="fw-bold text-dark fs-6">Atención Médica Dual</div>
+                                    <small class="text-muted">Rigurosidad + Empatía</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <span class="text-uppercase fw-bold text-purple-main mb-2 d-block" style="color:var(--purple-main);">Conoce a tu Médica</span>
+                    <h2 class="section-title text-start mb-3">Dra. Francy Chacón</h2>
+                    <h5 class="text-purple-dark fw-bold mb-4">Especialista en Medicina Interna & Subespecialista en Reumatología</h5>
+                    
+                    <p class="text-muted leading-relaxed">
+                        Entiendo perfectamente que vivir con dolor crónico o con la incertidumbre de una condición autoinmune puede ser agotador tanto física como emocionalmente. Mi compromiso como especialista es brindarte una atención escuchada, transparente y sin prisas, diseñando un plan de tratamiento adaptado a tu realidad.
+                    </p>
+
+                    <ul class="credential-list text-dark">
+                        <li><strong>Médica Cirujana:</strong> Universidad de Los Andes (ULA Núcleo Mérida / Táchira).</li>
+                        <li><strong>Especialista en Medicina Interna:</strong> ULA Núcleo Táchira / Hospital Central de San Cristóbal.</li>
+                        <li><strong>Subespecialista en Reumatología:</strong> Universidad Central de Venezuela (UCV) / Hospital Vargas de Caracas.</li>
+                        <li><strong>Miembro Activo:</strong> Sociedad Venezolana de Reumatología (SVR).</li>
+                        <li><strong>Credenciales Oficiales:</strong> Registro M.P.P.S. N° XXXXXX | Colegio de Médicos N° XXXXXX.</li>
+                    </ul>
+
+                    <div class="p-3 bg-white rounded-3 border-start border-4 border-purple-main shadow-sm mb-4" style="border-left-color: var(--purple-main) !important;">
+                        <p class="mb-0 fs-6 text-dark fw-medium">
+                            <em>"La combinación de la Medicina Interna y la Reumatología permite evaluar tu organismo de forma integral, no solo la articulación, protegiendo tus órganos vitales ante cualquier condición autoinmune."</em>
+                        </p>
+                    </div>
+
+                    <a href="https://wa.me/584161372180?text=Hola%20Dra.%20Francy%20Chac%C3%B3n%2C%20quisiera%20agendar%20una%20consulta%20con%20usted." target="_blank" class="btn btn-purple">
+                        <i class="fa-solid fa-calendar-check me-2"></i> Solicitar Cita Médica
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: Patologías y Servicios Tratados -->
+    <section class="py-5 my-4" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-uppercase fw-bold text-purple-main" style="color:var(--purple-main);">Áreas de Especialidad</span>
+                <h2 class="section-title">Condiciones Médicas y Servicios</h2>
+                <p class="section-subtitle">Encuentra la atención adecuada para tu diagnóstico o síntoma con las más avanzadas pautas terapéuticas.</p>
+            </div>
+
+            <ul class="nav nav-pills custom-tabs justify-content-center mb-5" id="servicesTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="autoinmune-tab" data-bs-toggle="pill" data-bs-target="#autoinmune" type="button" role="tab">
+                        <i class="fa-solid fa-shield-virus me-2"></i>Enfermedades Autoinmunes
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="articulares-tab" data-bs-toggle="pill" data-bs-target="#articulares" type="button" role="tab">
+                        <i class="fa-solid fa-bone me-2"></i>Dolor Articular y Óseo
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="procedimientos-tab" data-bs-toggle="pill" data-bs-target="#procedimientos" type="button" role="tab">
+                        <i class="fa-solid fa-user-doctor me-2"></i>Servicios Especializados
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="servicesTabContent">
+                <!-- TAB 1: Autoinmunes -->
+                <div class="tab-pane fade show active" id="autoinmune" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-dna"></i></div>
+                                <h5 class="fw-bold">Lupus Eritematoso Sistémico (LES)</h5>
+                                <p class="text-muted fs-6 mb-0">Manejo integral, prevención de brotes y control continuo para preservar la función de órganos vitales.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+                                <h5 class="fw-bold">Artritis Reumatoide</h5>
+                                <p class="text-muted fs-6 mb-0">Diagnóstico precoz y tratamiento inmunomodulador para detener el daño articular y la rigidez.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-droplet-slash"></i></div>
+                                <h5 class="fw-bold">Síndrome de Sjögren</h5>
+                                <p class="text-muted fs-6 mb-0">Control de la sequedad ocular y bucal, acompañado de seguimiento sistémico glandular y articular.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-layer-group"></i></div>
+                                <h5 class="fw-bold">Esclerodermia / Esclerosis Sistémica</h5>
+                                <p class="text-muted fs-6 mb-0">Tratamiento para afecciones cutáneas, vasculares y vasculopatías periféricas.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-heart-pulse"></i></div>
+                                <h5 class="fw-bold">Vasculitis y Miopatías Inflamatorias</h5>
+                                <p class="text-muted fs-6 mb-0">Evaluación profunda de la inflamación en vasos sanguíneos y debilidad muscular progresiva.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: Articulares y Metabolicas -->
+                <div class="tab-pane fade" id="articulares" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-person-dots-from-line"></i></div>
+                                <h5 class="fw-bold">Artrosis / Osteoartritis</h5>
+                                <p class="text-muted fs-6 mb-0">Tratamiento efectivo para el desgaste del cartílago en rodillas, caderas, columna y manos.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-cubes"></i></div>
+                                <h5 class="fw-bold">Gota y Artritis por Cristales</h5>
+                                <p class="text-muted fs-6 mb-0">Alivio inmediato de ataques agudos de ácido úrico y control metabólico a largo plazo.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-child-reaching"></i></div>
+                                <h5 class="fw-bold">Fibromialgia y Dolor Crónico</h5>
+                                <p class="text-muted fs-6 mb-0">Abordaje multidisciplinario para reducir la sensibilidad, fatiga y dolor generalizado.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-bone"></i></div>
+                                <h5 class="fw-bold">Osteoporosis y Salud Ósea</h5>
+                                <p class="text-muted fs-6 mb-0">Prevención de fracturas y fortalecimiento de la densidad ósea en pacientes adultos y mayores.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-notes-medical"></i></div>
+                                <h5 class="fw-bold">Artritis Psoriásica y Espondilitis</h5>
+                                <p class="text-muted fs-6 mb-0">Manejo de la inflamación axial, dolor lumbar nocturno y afectación articular asociada a la piel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: Servicios -->
+                <div class="tab-pane fade" id="procedimientos" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-hospital-user"></i></div>
+                                <h5 class="fw-bold">Consulta Presencial</h5>
+                                <p class="text-muted fs-6 mb-0">Evaluación clínica detallada, examen físico minucioso e interpretación de estudios de laboratorio e imágenes.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-syringe"></i></div>
+                                <h5 class="fw-bold">Infiltraciones Articulares</h5>
+                                <p class="text-muted fs-6 mb-0">Procedimiento intraarticular y periarticular para alivio directo y rápido de la inflamación severa.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-laptop-medical"></i></div>
+                                <h5 class="fw-bold">Teleconsulta / Online</h5>
+                                <p class="text-muted fs-6 mb-0">Seguimiento y revisión de exámenes para pacientes en el interior de Venezuela o el extranjero.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="service-box">
+                                <div class="text-purple-main fs-3 mb-3" style="color:var(--purple-main);"><i class="fa-solid fa-pills"></i></div>
+                                <h5 class="fw-bold">Manejo de Terapias Biológicas</h5>
+                                <p class="text-muted fs-6 mb-0">Indicación, administración y monitoreo seguro de fármacos modificadores de la enfermedad (FAMEs/DMARDs).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: Proceso de Agendamiento Transparente -->
+    <section class="py-5 bg-light position-relative" style="background-color: var(--purple-pastel-soft) !important;">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-uppercase fw-bold text-purple-main" style="color:var(--purple-main);">Paso a Paso</span>
+                <h2 class="section-title">Agendar tu Cita es Sencillo y Rápido</h2>
+                <p class="section-subtitle">Diseñado para brindarte facilidad desde tu casa o desde el extranjero.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-bold mb-3">Contacto por WhatsApp</h5>
+                        <p class="text-muted mb-0">Haz clic en el botón de reserva. Nuestro equipo responderá tus dudas sobre disponibilidad de cupos y costos de forma inmediata.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-bold mb-3">Confirmación y Preparación</h5>
+                        <p class="text-muted mb-0">Selecciona la fecha y hora de tu preferencia, confirma tu reserva e infórmate de qué exámenes previos llevar a la consulta.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-bold mb-3">Consulta Especializada</h5>
+                        <p class="text-muted mb-0">Asiste a tu evaluación (presencial u online) de 45 a 60 minutos con la Dra. Francy Chacón para establecer tu diagnóstico y plan claro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://wa.me/584161372180?text=Hola%20Dra.%20Francy%20Chac%C3%B3n%2C%20deseo%20agendar%20mi%20cita%20m%C3%A9dica." target="_blank" class="btn btn-whatsapp btn-lg">
+                    <i class="fa-brands fa-whatsapp fs-4"></i> Iniciar Reserva por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: Prueba Social y Testimonios -->
+    <section class="py-5 my-4">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-uppercase fw-bold text-purple-main" style="color:var(--purple-main);">Testimonios</span>
+                <h2 class="section-title">La Experiencia de Nuestros Pacientes</h2>
+                <p class="section-subtitle">Conoce cómo hemos ayudado a devolver la tranquilidad y el bienestar a nuestros pacientes.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-dark fs-6 fstyle-italic mb-4">
+                                "Tenía meses de médico en médico por un dolor en las manos que no me dejaba trabajar. La Dra. Francy dio con el diagnóstico de Artritis en la primera consulta. Su empatía y explicación fueron excepcionales."
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-purple-pastel rounded-circle text-purple-dark fw-bold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; background-color: var(--purple-pastel);">MG</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">María G.</h6>
+                                <small class="text-muted">Paciente Presencial (San Cristóbal)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-dark fs-6 fstyle-italic mb-4">
+                                "Desde el exterior pude agendar la consulta de mi mamá en Venezuela. El proceso por WhatsApp fue impecable y el reporte médico posterior fue súper completo y detallado."
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-purple-pastel rounded-circle text-purple-dark fw-bold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; background-color: var(--purple-pastel);">CR</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Carlos R.</h6>
+                                <small class="text-muted">Familiar desde EE.UU.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-dark fs-6 fstyle-italic mb-4">
+                                "Excelente profesional. Me explicó detalladamente mi diagnóstico de Lupus y resolvió todas las dudas que ningún otro doctor me había aclarado. Me siento con esperanza otra vez."
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bg-purple-pastel rounded-circle text-purple-dark fw-bold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px; background-color: var(--purple-pastel);">AP</div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Andrea P.</h6>
+                                <small class="text-muted">Consulta Online (Caracas)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rating badge -->
+            <div class="text-center mt-5">
+                <span class="badge bg-white border border-purple-pastel text-purple-dark p-3 rounded-pill shadow-sm fs-6">
+                    <i class="fa-solid fa-star text-warning me-1"></i> Valoración promedio de <strong>5.0 / 5.0</strong> basada en la satisfacción de nuestros pacientes.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 8: Datos Prácticos, Ubicación y Formas de Pago en Venezuela -->
+    <section class="py-5 bg-light" id="ubicacion" style="background-color: var(--purple-pastel-soft) !important;">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-uppercase fw-bold text-purple-main" style="color:var(--purple-main);">Información Útil</span>
+                <h2 class="section-title">Ubicación, Horarios y Métodos de Pago</h2>
+                <p class="section-subtitle">Todo lo que necesitas saber antes de tu visita o consulta.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Columna Dirección e Horarios -->
+                <div class="col-lg-6">
+                    <div class="info-card h-100">
+                        <h4 class="fw-bold text-purple-dark mb-4">
+                            <i class="fa-solid fa-clinic-medical text-purple-main me-2" style="color:var(--purple-main);"></i> Sede Consultorio
+                        </h4>
+                        
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-1">Instituto de Bio Ingeniería y Diagnóstico (IBIDSA)</h6>
+                            <p class="text-muted mb-0">Piso 3, Carrera 26, entre calles 9 y 10, Barrio Obrero, San Cristóbal, Estado Táchira, Venezuela.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-2"><i class="fa-regular fa-clock me-2 text-purple-main" style="color:var(--purple-main);"></i> Horarios de Atención Presencial:</h6>
+                            <ul class="list-unstyled text-muted fs-6 mb-0">
+                                <li class="mb-1"><strong>Lunes:</strong> A partir de las 12:00 pm (Previa cita)</li>
+                                <li class="mb-1"><strong>Martes a Viernes:</strong> 8:00 am a 4:00 pm (Previa cita)</li>
+                                <li><strong>Teleconsulta Online:</strong> Horarios flexibles a convenir con el paciente.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-3 bg-light rounded-3 border">
+                            <h6 class="fw-bold mb-1 text-dark"><i class="fa-solid fa-file-invoice-dollar text-purple-main me-2" style="color:var(--purple-main);"></i> Seguros Médicos y Reembolsos</h6>
+                            <small class="text-muted d-block">
+                                Se emite factura fiscal con su correspondiente informe médico detallado para la tramitación de reembolsos con compañías de seguros nacionales e internacionales.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Mapa y Pagos -->
+                <div class="col-lg-6">
+                    <div class="info-card h-100">
+                        <h4 class="fw-bold text-purple-dark mb-4">
+                            <i class="fa-solid fa-credit-card text-purple-main me-2" style="color:var(--purple-main);"></i> Formas de Pago Aceptadas
+                        </h4>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="payment-badge">
+                                    <i class="fa-solid fa-mobile-screen-button me-1"></i> Pago Móvil (VES)
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="payment-badge">
+                                    <i class="fa-solid fa-building-columns me-1"></i> Transferencias Bancarias
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="payment-badge">
+                                    <i class="fa-solid fa-wallet me-1"></i> Binance / Zinli
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="payment-badge">
+                                    <i class="fa-solid fa-money-bill-wave me-1"></i> Efectivo (USD / COP)
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="fw-bold mb-3"><i class="fa-solid fa-map-location-dot text-purple-main me-2" style="color:var(--purple-main);"></i> Ubicación en Google Maps</h6>
+                        <div class="rounded-3 overflow-hidden border" style="height: 200px;">
+                            <iframe 
+                                title="Ubicación Consultorio Dra. Francy Chacón IBIDSA"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.5356930063283!2d-72.22851862413847!3d7.775438892244031!2m3!1f0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666cb66db78bbd%3A0x8e8334bcfae1903e!2sBarrio%20Obrero%2C%20San%20Crist%C3%B3bal%205001%2C%20T%C3%A1chira!5e0!3m2!1ses!2sve!4v1710000000000!5m2!1ses!2sve" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 9: Preguntas Frecuentes (FAQ Accordion) -->
+    <section class="py-5 my-4" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="text-uppercase fw-bold text-purple-main" style="color:var(--purple-main);">Aclara tus Dudas</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Respuestas a las dudas más comunes sobre la consulta reumatológica.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Cuál es la diferencia entre artritis y artrosis?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La <strong>artritis</strong> es la inflamación activa de la articulación (con frecuencia causada por enfermedades autoinmunes como la Artritis Reumatoide o Lupus), generando calor, hinchazón y rigidez matutina prolongada. La <strong>artrosis</strong> es el desgaste progresivo del cartílago articular por el paso del tiempo o sobreuso. Ambas condiciones requieren diagnósticos y tratamientos completamente distintos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Qué debo llevar a mi primera consulta con la Dra. Francy Chacón?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Te recomendamos traer todos los exámenes de laboratorio recientes, radiografías, resonancias o ecografías previas que tengas, así como una lista anotada con los medicamentos que tomas actualmente y tus antecedentes de salud.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿La doctora atiende emergencias inmediatas?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La atención reumatológica es mediante <strong>previa cita programada</strong> para poder dedicar el tiempo de evaluación exhaustiva de 45 a 60 minutos que requiere cada paciente. En caso de presentar una emergencia médica aguda, debes acudir al servicio de Urgencias de la clínica más cercana.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Cómo funciona la modalidad de Consulta Online?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    La teleconsulta se lleva a cabo mediante una videollamada programada. Evaluamos tu sintomatología, revisamos los exámenes de laboratorio enviados digitalmente, brindamos las recomendaciones médicas y emitimos el informe médico oficial con las indicaciones farmacológicas correspondientes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Widgets -->
+    <div class="floating-widgets">
+        <div class="whatsapp-widget">
+            <span class="whatsapp-tooltip d-none d-md-inline-block">¿Tienes dudas o deseas agendar? Habla con mi secretaria</span>
+            <a href="https://wa.me/584161372180?text=Hola%20Dra.%20Francy%20Chac%C3%B3n%2C%20vi%20su%20p%C3%A1gina%20web%20y%20deseo%20agendar%20una%20consulta%20m%C3%A9dica%20%5BPresencial%20%2F%20Online%5D.%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20disponibilidad." target="_blank" class="whatsapp-btn-float" title="Contactar por WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <a href="https://instagram.com/reumedica" target="_blank" class="instagram-btn-float" title="Síguenos en Instagram @reumedica">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- SECCIÓN 10: Pie de Página (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="p-2 rounded-circle bg-white text-purple-main d-flex align-items-center justify-content-center" style="width:38px; height:38px;">
+                            <i class="fa-solid fa-stethoscope text-purple-main" style="color:var(--purple-main);"></i>
+                        </div>
+                        <h5 class="text-white mb-0 fw-bold">Dra. Francy Chacón</h5>
+                    </div>
+                    <p class="text-muted">Reumatólogo e Internista comprometida con brindar un tratamiento integral, certero e indivualizado para la salud articular y enfermedades autoinmunes.</p>
+                    <div class="d-flex gap-3">
+                        <a href="https://instagram.com/reumedica" target="_blank" class="text-white fs-5 footer-link"><i class="fa-brands fa-instagram"></i> @reumedica</a>
+                        <a href="https://wa.me/584161372180" target="_blank" class="text-white fs-5 footer-link"><i class="fa-brands fa-whatsapp"></i> +58 416 1372180</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#especialidades" class="footer-link">Especialidades Tratadas</a></li>
+                        <li class="mb-2"><a href="#sobre-mi" class="footer-link">Sobre la Dra. Francy Chacón</a></li>
+                        <li class="mb-2"><a href="#ubicacion" class="footer-link">Ubicación y Métodos de Pago</a></li>
+                        <li class="mb-2"><a href="#faq" class="footer-link">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-md-6">
+                    <h6 class="footer-title">Consultorio San Cristóbal</h6>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2 text-purple-light"></i> IBIDSA, Piso 3, Carrera 26, Barrio Obrero, San Cristóbal, Táchira.</p>
+                    <p class="mb-1"><i class="fa-brands fa-whatsapp me-2 text-purple-light"></i> +58 416-1372180</p>
+                    <p class="mb-0"><i class="fa-solid fa-user-doctor me-2 text-purple-light"></i> M.P.P.S. N° XXXXXX | Colegio de Médicos N° XXXXXX</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary mb-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <small>© <span id="currentYear"></span> Dra. Francy Chacón (@reumedica). Todos los derechos reservados.</small>
+                <small class="text-muted">Desarrollado para Conversión CRO y Atención Médica Humana.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update Footer Year dynamically
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close navbar mobile collapse on click
+                        const navbarCollapse = document.getElementById('navbarMain');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                            bsCollapse.hide();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
